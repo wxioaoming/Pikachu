@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>皮卡丘</title>
+  <style id="main"></style>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+    }
+
+    #code {
+      position: absolute;
+      border: 1px solid black;
+      width: 35%;
+      height: 80%;
+      left: 10%;
+      top: 10%;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #Code_part {
+      width: 80%;
+      height: 80%;
+      background-color: rgb(218, 218, 218);
+      padding: 30px;
+      overflow: auto;
+    }
+
+    #painting {
+      position: absolute;
+      right: 10%;
+      top: 10%;
+      border: 1px solid black;
+      width: 35%;
+      height: 80%;
+      border-radius: 5px;
+    }
+
+    #Pikachu {
+      width: 100%;
+      height: 100%;
+    }
+
+    button {
+      float: right;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="code">
+    <pre id="Code_part"></pre>
+  </div>
+  <div id="painting">
+    <div id="Pikachu">
+      <div class="nose"></div>
+      <div class="eye eye_left"></div>
+      <div class="eye eye_right"></div>
+      <div class="cheek cheek_left"></div>
+      <div class="cheek cheek_right"></div>
+      <div class="Lips Lips-left"></div>
+      <div class="Lips Lips-right"></div>
+      <div class="mouth-wrapper">
+        <div class="mouth"></div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <button>快档</button>
+  <button>中档</button>
+  <button>慢档</button>
+  <script src="./color.js"></script>
+</body>
+
+</html>
